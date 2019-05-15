@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -9,6 +9,39 @@
   <ItemGroup>
     <ProjectReference Include="..\DFe.Classes.Standard\DFe.Classes.Standard.csproj" />
     <ProjectReference Include="..\DFe.Utils.Standard\DFe.Utils.Standard.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="C:\Dev\3rdLibs\DFe.NET\Shared.CTe.Classes\Servicos\DistribuicaoDFe\consNSU.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="C:\Dev\3rdLibs\DFe.NET\Shared.CTe.Classes\Servicos\DistribuicaoDFe\distNSU.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="C:\Dev\3rdLibs\DFe.NET\Shared.CTe.Classes\Servicos\DistribuicaoDFe\loteDistDFeInt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="C:\Dev\3rdLibs\DFe.NET\Shared.CTe.Classes\Servicos\DistribuicaoDFe\retDistDFeInt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="C:\Dev\3rdLibs\DFe.NET\Shared.CTe.Classes\Servicos\DistribuicaoDFe\Schemas\detEvento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="C:\Dev\3rdLibs\DFe.NET\Shared.CTe.Classes\Servicos\DistribuicaoDFe\Schemas\eventoCTe.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="C:\Dev\3rdLibs\DFe.NET\Shared.CTe.Classes\Servicos\DistribuicaoDFe\Schemas\eventoInfEvento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="C:\Dev\3rdLibs\DFe.NET\Shared.CTe.Classes\Servicos\DistribuicaoDFe\Schemas\procEventoCTe.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="C:\Dev\3rdLibs\DFe.NET\Shared.CTe.Classes\Servicos\DistribuicaoDFe\Schemas\retEventoCTe.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="C:\Dev\3rdLibs\DFe.NET\Shared.CTe.Classes\Servicos\DistribuicaoDFe\Schemas\retInfEvento.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 
 </Project>
