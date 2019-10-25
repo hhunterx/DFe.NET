@@ -49,7 +49,7 @@ namespace CTe.Classes
         private static readonly object SyncRoot = new object();
         private string _diretorioSchemas;
 
-        private ConfiguracaoServico()
+        public ConfiguracaoServico()
         {
             ConfiguracaoCertificado = new ConfiguracaoCertificado();
             TipoEmissao = tpEmis.teNormal;
@@ -115,6 +115,8 @@ namespace CTe.Classes
         ///     Versão do layout
         /// </summary>
         public versao VersaoLayout { get; set; }
+
+        public bool IsAdicionaQrCode { get; set; }
 
         /// <summary>
         ///     Diretório onde estão aramazenados os schemas para validação
