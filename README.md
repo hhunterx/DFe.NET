@@ -1,6 +1,6 @@
 Biblioteca em C# para geração de NFe
 
-Grupo Skype,solicitar para add via SKYPE => robertoalves18@hotmail.com
+Grupo Skype => enviar email para robertoalvespereira18@gmail.com
 
 [![Build status](https://ci.appveyor.com/api/projects/status/7igb6s48sw2p95o3/branch/master?svg=true)](https://ci.appveyor.com/project/adeniltonbs/zeus-net-nfe-nfce/branch/master) 
 [![Issues](https://img.shields.io/github/issues/ZeusAutomacao/DFe.NET.svg?style=flat-square)](https://github.com/ZeusAutomacao/DFe.NET/issues)
@@ -70,14 +70,14 @@ Para facilitar o seus estudos a biblioteca oferece projetos do tipo DEMO, sendo 
 >¹ As dlls do FastReport.Net disponibilizadas na biblioteca são da versão de demonstração³ do mesmo. A versão de demonstração coloca uma marca d'água "DEMO VERSION" na impressão do relatório. Se você possui licença FastReport.Net, substitua as dlls do FastReport.Net nos projetos NFe.Danfe.Fast\Dll, CTe.Dacte.Fast\DLLs e MDFe.Damdfe.Fast\Dlls pelas dlls de sua versão licenciada, antes de compilar sua aplicação para distribuição.
 
 >² Obs: Visando abranger o maior número possível de impressoras térmicas, a impressão é feita via spooler do windows. A impressão térmica via spooler, dependendo da impressora, pode sair com má qualidade. Para sanar isso, no relatório são utilizadas duas fontes condensadas que possuem boa legibilidade em tamanho pequeno, a saber a OpenSans e UbuntuCondensed, ambas de uso livre podendo ser obtidas em https://www.google.com/fonts;
-As fontes estão anexadas ao projeto em NFe.Impressao\NFCe\Fontes_;
+As fontes estão anexadas ao projeto em Shared.NFe.Danfe.Base\Fontes_;
 Instale as fontes informadas no PC que for imprimir o DANFE da NFCe_;
 
 >³ Atualmente existe um esforço da comunidade para migrar o projeto para o .NetStandard (https://github.com/ZeusAutomacao/DFe.NET/issues/1001). Entre as mudanças, esta adicionar suporte ao Fast Reports Open Source (https://github.com/FastReports/FastReport). A principal limitação do FastReports nessa versão é não ter acesso à direct print, o que pode ser ruim para NFCe, mas pode ser facilmente contornado para os outros documentos, comentem na issue ideias e opiniões, e se possíve, colaborem com o branch.
 
 **Impressão (.NetCore/.NetStandard):**
 ----------
-- Não existe suporte até o momento para impressão de NFCe.
+- Não existe suporte até o momento para impressão de NFCe (utilize a opção ESC/POS em https://github.com/marcosgerene/Gerene.DFe.EscPos).
 - A impressão da NFe utiliza o FastReport.OpenSource (https://github.com/FastReports/FastReport), sendo ele instalado automatico ao utilizar o pacote nuget do Zeus.
 - A impressão requer que o arquivo .frx seja indicado, ou seja, ao publicar os binarios de seu projeto os arquivos .frx devem estar juntos e passado o caminho do arquivo para que seja gerado a impressão.
 - Até o momento não é suportado a impressão direta na impressora. As saídas suportadas são Stream ou Byte[], sendo elas em PDF, HTML e PNG.
@@ -86,7 +86,7 @@ Instale as fontes informadas no PC que for imprimir o DANFE da NFCe_;
 
 Para a geração de impressão no Linux, alguns detalhes devem ser compreendidos...
 
-Foi necessário a instalação da biblioteca **libgdiplux** 
+Foi necessário a instalação da biblioteca **libgdiplus** 
 
 - (Exemplo abaixo para Ubuntu 18.x)
 	
